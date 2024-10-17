@@ -1,4 +1,4 @@
-# ANOVA_RFF: ANOVA-Boosting for random Fourier Features
+# ANOVA_RFF: ANOVA-Boosting for Random Fourier Features
 This algorithms aims to do sensitivity analysis for high-dimensional data, even for dependent input variables. 
 
 ## Included files
