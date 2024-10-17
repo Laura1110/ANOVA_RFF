@@ -1,7 +1,7 @@
 # ANOVA_RFF: ANOVA-Boosting for random Fourier Features
 This algorithms aims to do sensitivity analysis for high-dimensional data, even for dependent input variables. 
-Notes for the implementation:
 
+## Included files
 
 - test_anova_RFF.jl:
 Test file for testing the RFF-Boosting.
@@ -13,7 +13,7 @@ Creates module anova_rff
 Containes all algortihms used for the ANOVA-Boosting. Implemented random feature algorithms to apply after sensitivity analysis are SHRIMP and HARFE.
 
 
-Notes for the implementation:
+## Notes for the implementation
 The function `f = anova_RFF.RFF_model(X,y, "exp")` constructs a RFF model, where $X$ is the matrix of inputs and $y$ is the vector of outputs. 
 The function `U = anova_RFF.ANOVA_boosting(f,q,N)` finds an ANOVA-truncated index set $U$. You have additional Parameters to choose:
 - `dependence`: `true` or `false` $\rightarrow$ there are two different possibilities implemented for the dependence of the Input, see paper. The option `true` can also be applied to Independent Input
@@ -28,6 +28,7 @@ All algorithms are implemented for the expoential basis $\mathrm e ^{\mathrm{i} 
 U = anova_RFF.ANOVA_boosting(shr,q,N, dependence = true, anova_step = anova_step, epsilon = epsilon)
 
 
+## References
 
 This is the repository for the algorithms described in the paper
 
