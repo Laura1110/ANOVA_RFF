@@ -15,14 +15,14 @@ Containes all algortihms used for the ANOVA-Boosting. Implemented random feature
 
 ## Notes on the implementation
 The function 
-´´´´
+```
 f = anova_RFF.RFF_model(X,y, "exp")
-´´´´
+```
 constructs a RFF model, where $X$ is the matrix of inputs and $y$ is the vector of outputs. 
 The function 
-´´´´
+```
 U = anova_RFF.ANOVA_boosting(f,q,N)
-´´´´
+```
  finds an ANOVA-truncated index set $U$. You have additional Parameters to choose:
 - `dependence`: `true` or `false` $\rightarrow$ there are two different possibilities implemented for the dependence of the Input, see paper. The option `true` can also be applied to Independent Input
 - `anova_step`: 'ascent' or 'descent' $\rightarrow$ either start with all all terms of order $1$ and increase the order iterativly to $q$ or start with all terms of order $q$ and delete nonimportant terms of highest order iterativly. See corresponding Dissertation for more Information.   
