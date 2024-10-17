@@ -41,7 +41,7 @@ This is the repository for the algorithms described in the paper
 
 ANOVA-Boosting for Random Fourier Features<br>
 Daniel Potts, Laura Weidensager<br>
-*arXiv: 2404.03050*
+*arXiv: [2404.03050](https://arxiv.org/abs/2404.03050)*
 
 
 
