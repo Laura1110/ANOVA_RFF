@@ -36,7 +36,7 @@ end
 #### RFF  ######
 
 
-f = 1
+f = 3
 
 algo = "anova"
 #algo = "rff"
