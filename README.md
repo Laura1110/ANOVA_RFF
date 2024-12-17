@@ -46,11 +46,12 @@ Daniel Potts, Laura Weidensager<br>
 
 
 In the folder *Dissertation* you can find all numerical experiments for my Dissertation:
-Figure 4.1: plots_kink.jl
-Figure 6.8-6.11: interpretability.jl
+Figure 4.1: plots_kink.jl<br>
+Figure 6.8-6.11: interpretability.jl<br>
 
-Table 6.1: independent.jl
-Table 6.2: numerik_dep.jl
+
+Table 6.1: independent.jl<br>
+Table 6.2: numerik_dep.jl<br>
 Table 6.4: validate_trafo.jl, validate_RFF.jl
 
 
