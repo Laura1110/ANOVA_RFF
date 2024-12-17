@@ -45,7 +45,7 @@ Daniel Potts, Laura Weidensager<br>
 
 
 
-In the folder *Dissertation* you can find all numerical experiments for my Dissertation:
+In the folder *Dissertation* you can find all numerical experiments for my Dissertation:<br>
 Figure 4.1: plots_kink.jl<br>
 Figure 6.8-6.11: interpretability.jl<br>
 
