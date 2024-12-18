@@ -245,10 +245,17 @@ function ANOVA_boosting(shr, q, N ; dependence = false, anova_step= "descent", e
                 end
                 U_new = Vector{Vector{Int}}(undef, 1)
                 U_new[1] = []
-                for u in shr.U[2:end]
-                    if gsis[u] > epsilon || length(u)<qq
-                        append!(U_new,[u])
-                    end 
+                for u in shr.U[2:end] 
+                    if typeof(epsilon) == Vector{Float64}
+                        if gsis[u] > epsilon[length(u)] || length(u)<qq
+                            append!(U_new,[u])
+                        end 
+                    else 
+                        if gsis[u] > epsilon || length(u)<qq
+                            append!(U_new,[u])
+                        end 
+                    end
+
                 end
     
                 shr.W = Dict()
@@ -271,9 +278,16 @@ function ANOVA_boosting(shr, q, N ; dependence = false, anova_step= "descent", e
                 U_new = Vector{Vector{Int}}(undef, 1)
                 U_new[1] = []
                 for u in shr.U[2:end]
-                    if gsis[u] > epsilon 
-                        append!(U_new,[u])
-                    end 
+                    if typeof(epsilon) == Vector{Float64}
+                        if gsis[u] > epsilon[length(u)] 
+                            append!(U_new,[u])
+                        end 
+                    else 
+                        if gsis[u] > epsilon
+                            append!(U_new,[u])
+                        end 
+                    end
+
                 end
     
                 # append new u's with cardinality qq+1 
